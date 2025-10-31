@@ -7,7 +7,7 @@ class Empleado{
 	//constructor(){}
 
 	constructor(cc,nombresyApellidos,direccion,email,telefono,sueldoBase,
-		tipoEmpleado,tipoBonificacion){
+		tipoEmpleado,tipoBonificacion,salarioTotal){
 		this.cc = cc;
 		this.nombresyApellidos = nombresyApellidos;
 		this.direccion=direccion;
@@ -16,6 +16,7 @@ class Empleado{
 		this.sueldoBase=sueldoBase;
 		this.tipoEmpleado=tipoEmpleado;
 		this.tipoBonificacion=tipoBonificacion;
+		this.salarioTotal=salarioTotal;
 	}
 
 	//Métodos

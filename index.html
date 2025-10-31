@@ -40,7 +40,7 @@
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
           <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">Ejemplo tipo Segundo Parcial</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>Calletana López Baleta</span></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>Jhorman Cardenas Chinchilla</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
           <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
@@ -96,8 +96,6 @@
 
               <button type="button" class="btn btn-primary" onclick="crearEmpleado();">Agregar Empleado (Con un div Oculto)</button>
 
-              <button type="button" class="btn btn-success">Buscar Empleado (Con modal)</button>
-
 
               <div class="container" id="divAgregarEmpleado">
                  <h4>Agregar Empleados: Drapps</h2>
@@ -148,6 +146,7 @@
       <option value="A">A</option>
       <option value="B">B</option>
       <option value="C">C</option>
+      <option value="D">D</option>
 
     </select>
      </div>
@@ -161,72 +160,25 @@
               </div>
 
 
-              <table class="table table-hover" id="tablaEmpleados">
-    <thead>
-      <tr>
-        <th>No.</th>
-        <th>CC</th>
-        <th>Nombres y Apellidos</th>
-        <th>Dirección</th>
-        <th>Email</th>
-        <th>Teléfono</th>
-        <th>Sueldo Base</th>
-        <th>Tipo de Empleado</th>
-        <th>Tipo de bonificación</th>
-        <th>Modificar</th>
-        <th>Eliminar</th>
+<table id="tablaEmpleados" class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Cédula</th>
+      <th>Nombres y Apellidos</th>
+      <th>Dirección</th>
+      <th>Email</th>
+      <th>Teléfono</th>
+      <th>Sueldo Base</th>
+      <th>Tipo Empleado</th>
+      <th>Tipo Bonificación</th>
+      <th>Salario Total</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
 
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-          <td>1.</td>
-        <td>10768776555</td>
-        <td>Doe</td>
-        <td>Aguachica</td>
-         <td>doe@gmail.com</td>
-          <td>3153801813</td>
-           <td>100000</td>
-            <td>Fijo</td>
-             <td>C</td>
-              <td><button type="button" class="btn btn-warning">Actualizar</button></td>
-               <td><button type="button" class="btn btn-danger">Eliminar</button></td>
-
-      </tr>
-
-      <tr>
-          <td>2.</td>
-        <td>10768776545</td>
-        <td>Calletana López Baleta</td>
-        <td>Aguachica</td>
-         <td>ky@gmail.com</td>
-          <td>3153801813</td>
-           <td>100000</td>
-            <td>Fijo</td>
-             <td>A</td>
-              <td><button type="button" class="btn btn-warning">Actualizar</button></td>
-               <td><button type="button" class="btn btn-danger">Eliminar</button></td>
-
-      </tr>
-      
-      <tr>
-          <td>3.</td>
-        <td>10768776500</td>
-        <td>José Rodríguez</td>
-        <td>Aguachica</td>
-         <td>jose@gmail.com</td>
-          <td>3153801813</td>
-           <td>500000</td>
-            <td>Fijo</td>
-             <td>C</td>
-              <td><button type="button" class="btn btn-warning">Actualizar</button></td>
-               <td><button type="button" class="btn btn-danger">Eliminar</button></td>
-
-      </tr>
-      
-      
-    </tbody>
-  </table>
+<p id="saldoTotalTexto" class="text-end text-muted mt-2" style="font-size: 0.9rem;"></p>
 
 
             </div>
@@ -264,25 +216,6 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-card">
-              <div class="member-image-wrapper">
-                <img src="assets/img/person/person-f-1.webp" class="img-fluid" alt="Team Member">
-              </div>
-              <div class="member-content">
-                <h4 class="member-name">Calletana López Baleta</h4>
-                <span class="member-role">Estudiante</span>
-                <p class="member-bio">Ingeniería de Sistemas</p>
-                <div class="member-socials">
-                  <a href="#"><i class="bi bi-twitter-x"></i></a>
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="member-card">
               <div class="member-image-wrapper">
@@ -297,42 +230,6 @@
                   <a href="#"><i class="bi bi-facebook"></i></a>
                   <a href="#"><i class="bi bi-linkedin"></i></a>
                   <a href="#"><i class="bi bi-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member-card">
-              <div class="member-image-wrapper">
-                <img src="assets/img/person/person-f-3.webp" class="img-fluid" alt="Team Member">
-              </div>
-              <div class="member-content">
-                <h4 class="member-name">Laura Rodriguez</h4>
-                <span class="member-role">Marketing Director</span>
-                <p class="member-bio">Qui ut autem quo error molestiae. Voluptatem quia eligendi voluptatibus beatae vitae et quis. Quis voluptatem.</p>
-                <div class="member-socials">
-                  <a href="#"><i class="bi bi-twitter-x"></i></a>
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="member-card">
-              <div class="member-image-wrapper">
-                <img src="assets/img/person/person-m-4.webp" class="img-fluid" alt="Team Member">
-              </div>
-              <div class="member-content">
-                <h4 class="member-name">Michael Brown</h4>
-                <span class="member-role">Lead Engineer</span>
-                <p class="member-bio">Rerum et sint voluptatem enim aut. Quisquam et alias ut qui voluptatum. Autem voluptas exercitationem.</p>
-                <div class="member-socials">
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                  <a href="#"><i class="bi bi-github"></i></a>
-                  <a href="#"><i class="bi bi-stack-overflow"></i></a>
                 </div>
               </div>
             </div>

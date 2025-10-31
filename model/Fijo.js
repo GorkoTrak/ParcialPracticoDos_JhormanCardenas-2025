@@ -1,6 +1,6 @@
-class Contrato extends Empleado{
+class Fijo extends Empleado {
 
-	constructor(){}
+    constructor(){}
 
 	constructor(tiempoContrato){
 		this.tiempoContrato=tiempoContrato;
